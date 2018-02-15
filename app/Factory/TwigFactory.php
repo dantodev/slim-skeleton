@@ -37,7 +37,7 @@ class TwigFactory
                 if (!getenv("DEBUG") && array_key_exists($file_name, $this->manifest)) {
                     $file_name = $this->manifest[$file_name];
                 }
-                return "´/build/" . $file_name;
+                return "/build/" . $file_name;
             }
         });
         $twig->addExtension(new TwigExtension($router, ""));
